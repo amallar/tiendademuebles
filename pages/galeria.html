@@ -9,7 +9,7 @@
     <!-- Icono del sitio web-->
     <link rel="shorcout icon" href="../assets/img/favicon.ico" type="image/x-icon">
     <!-- Hoja de estilos sitio web-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,19 +30,17 @@
 
 <body>
     <header>
-        <img class="logo" src="../assets/img/logo.png" alt="Imagen Logo" />
-        <h1 class="nombre-sitio">Tienda <span> de Muebles </span></h1>
-    </header>
-
-    <div class="contenedor-navegacion">
+        <div class="logo">
+            <a href="../index.html"> <img class="logo-imagen" src="../assets/img/logo.png" alt="Imagen Logo" /> </a>
+            <a href="../index.html">
+                <h1 class="animate__animated animate__bounce nombre-sitio">Tienda <span> de Muebles </span></h1>
+            </a>
+        </div>
         <nav class="nav-principal contenedor">
-            <a href="../index.html">Inicio</a>
             <li><a href="../pages/nosotros.html">Nosotros</a>
                 <ul>
-                    <li> <a href="../pages/nosotros.html">Submenu1 </a> </li>
-                    <li> <a href="../pages/nosotros.html">Submenu2</a> </li>
-                    <li> <a href="../pages/nosotros.html">Submenu3</a> </li>
-                    <li> <a href="../pages/nosotros.html">Submenu4</a> </li>
+                    <li> <a href="../pages/historia.html">Historia </a> </li>
+                    <li> <a href="../pages/premios.html">Premios</a> </li>
                 </ul>
             </li>
             <a href="../pages/tienda.html">Tienda</a>
@@ -50,39 +48,39 @@
             <a href="../pages/galeria.html">Galería</a>
             <a href="../pages/contacto.html">Contacto</a>
         </nav>
-    </div>
+    </header>
 
-    
+    <!-- Galeria de productos-->
     <main class="contenido-principal contenedor ">
         <h2 class="text-center">Galería</h2>
 
         <ul class="galeria">
             <li>
-                <a href="../assets/img/galeria_01.jpg">
+                <a id="oficina" href="../assets/img/galeria_01.jpg">
                     <img src="../assets/img/galeria_01.jpg" alt="imagen galeria 1">
                 </a>
             </li>
 
             <li>
-                <a href="../assets/img/galeria_02.jpg">
+                <a id="cocina" href="../assets/img/galeria_02.jpg">
                     <img src="../assets/img/galeria_02.jpg" alt="imagen galeria 2">
                 </a>
             </li>
 
             <li>
-                <a href="../assets/img/galeria_03.jpg">
+                <a id="jardin" ref="../assets/img/galeria_03.jpg">
                     <img src="../assets/img/galeria_03.jpg" alt="imagen galeria 3">
                 </a>
             </li>
 
             <li>
-                <a href="../assets/img/galeria_04.jpg">
+                <a id="casa" href="../assets/img/galeria_04.jpg">
                     <img src="../assets/img/galeria_04.jpg" alt="imagen galeria 4">
                 </a>
             </li>
 
             <li>
-                <a href="../assets/img/galeria_05.jpg">
+                <a id="dormitorios" href="../assets/img/galeria_05.jpg">
                     <img src="../assets/img/galeria_05.jpg" alt="imagen galeria 5">
                 </a>
             </li>
@@ -111,35 +109,32 @@
                 </a>
             </li>
         </ul>
-        
+
     </main>
 
-
-    <footer class="site-footer">
+    <!-- Footer-->
+    <footer class="wow animate__animated animate__bounce site-footer">
         <div class="grid-footer contenedor">
             <div>
                 <h3>Categorías</h3>
 
                 <nav class="footer-menu">
-                    <a href="#">Oficina</a>
-                    <a href="#">Cocina</a>
-                    <a href="#">Jardín</a>
-                    <a href="#">Casa</a>
-                    <a href="#">Dormitorios</a>
+                    <a href="../pages/galeria.html#oficina">Oficina</a>
+                    <a href="../pages/galeria.html#cocina">Cocina</a>
+                    <a href="../pages/galeria.html#jardin">Jardín</a>
+                    <a href="../pages/galeria.html#casa">Casa</a>
+                    <a href="../pages/galeria.html#dormitorio">Dormitorios</a>
                 </nav>
             </div>
-
             <div>
                 <h3>Sobre Nosotros</h3>
                 <nav class="footer-menu">
-                    <a href="#">Historia</a>
-                    <a href="#">Misión y Valores</a>
-                    <a href="#">Muebles</a>
-                    <a href="#">Localización</a>
-                    <a href="#">Términos del Servicio</a>
+                    <a href="../pages/historia.html">Historia</a>
+                    <a href="../pages/premios.html">Premios</a>
+                    <a href="../pages/nosotros.html#estilo">Estilo</a>
+                   
                 </nav>
             </div>
-
             <div>
                 <h3>Soporte</h3>
                 <nav class="footer-menu">
@@ -151,12 +146,9 @@
                             class="fa-brands fa-facebook fa-3x"></i></a>
                 </nav>
             </div>
-
         </div>
-
         <p class="copyright">Todos los derechos Reservados</p>
     </footer>
-
 </body>
 
 </html>

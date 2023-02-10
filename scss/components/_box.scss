@@ -1,0 +1,23 @@
+/** Categorias **/
+
+
+.categorias {
+	padding: 5rem 0;
+}
+.categoria {
+	margin-bottom: 2rem;
+	img {
+		width: 100%;
+	}
+	a {
+		text-align: center;
+		display: block;
+		padding: 2rem;
+		font-size: 2rem;
+		&:hover {
+			background-color: map-get($estilos, color-producto);
+			color: map-get($estilos, texto-producto);
+			border-bottom-right-radius: 1rem;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+
+/** Header y Navegacion **/
+
+/** Ejemplo Mixin **/
+
+@mixin contenedor_flex ($display, $flex-direction, $justify-content, $align-items) {
+
+	display:$display;
+	flex-direction:$flex-direction;
+	justify-content:$justify-content;
+	align-items: $align-items;
+	
+}
+
+
+header {
+	@include contenedor_flex (flex, column, center, center);	
+	gap: 0.5rem;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	border-bottom: .1rem solid #e1e1e1;
+	width: 100%;
+	animation-name: un_efecto;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	height: 20rem;
+}
+
+@media (min-width: 768px) {
+
+	.entrada-meta {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+}

@@ -9,7 +9,7 @@
     <!-- Icono del sitio web-->
     <link rel="shorcout icon" href="../assets/img/favicon.ico" type="image/x-icon">
     <!-- Hoja de estilos sitio web-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,19 +30,17 @@
 
 <body>
     <header>
-        <img class="logo" src="../assets/img/logo.png" alt="Imagen Logo" />
-        <h1 class="nombre-sitio">Tienda <span> de Muebles </span></h1>
-    </header>
-
-    <div class="contenedor-navegacion">
+        <div class="logo">
+            <a href="../index.html"> <img class="logo-imagen" src="../assets/img/logo.png" alt="Imagen Logo" /> </a>
+            <a href="../index.html">
+                <h1 class="animate__animated animate__bounce nombre-sitio">Tienda <span> de Muebles </span></h1>
+            </a>
+        </div>
         <nav class="nav-principal contenedor">
-            <a href="../index.html">Inicio</a>
             <li><a href="../pages/nosotros.html">Nosotros</a>
                 <ul>
-                    <li> <a href="../pages/nosotros.html">Submenu1 </a> </li>
-                    <li> <a href="../pages/nosotros.html">Submenu2</a> </li>
-                    <li> <a href="../pages/nosotros.html">Submenu3</a> </li>
-                    <li> <a href="../pages/nosotros.html">Submenu4</a> </li>
+                    <li> <a href="../pages/historia.html">Historia </a> </li>
+                    <li> <a href="../pages/premios.html">Premios</a> </li>
                 </ul>
             </li>
             <a href="../pages/tienda.html">Tienda</a>
@@ -50,8 +48,9 @@
             <a href="../pages/galeria.html">Galería</a>
             <a href="../pages/contacto.html">Contacto</a>
         </nav>
-    </div>
+    </header>
 
+    <!-- Descripcion sobre la tienda -->
     <main class="contenido-principal contenedor ">
         <h2 class="text-center">Sobre Nosotros</h2>
 
@@ -60,43 +59,41 @@
                 <img src="../assets/img/nosotros.jpg" alt="Imagen nosotros">
             </div>
             <div class="informacion-nosotros">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cumque voluptas ducimus in quia
-                    illo, vitae optio ratione ex veritatis harum similique modi quos delectus beatae ipsam, veniam
-                    facilis ipsa.</p>
+                <p>Tienda de muebles es una empresa dedicada al mueble y la decoración de su hogar, con los últimos estilos más actuales y modernos y conservando el estilo colonial y la madera natural para gustos más refinados.
+                </p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cum accusamus tempora, eos optio
-                    nobis. Obcaecati adipisci accusantium incidunt magnam maiores molestias quo ipsam vitae error quae
-                    exercitationem praesentium, excepturi architecto repellendus debitis reprehenderit omnis
-                    voluptatibus. Ratione ea sunt ad!</p>
+                <p>Somos un equipo de profesionales integrado por personas dedicadas al sector del mueble desde hace 2 décadas y comprometidos con el cliente en satisfacer y ofrecer unos productos de primeras calidades y que mejor se adapten a sus gustos y necesidades.
+
+                    Nuestra exposición está abierta para usted intentando cuidar al máximo Los detalles que más le gustan y ofreciendo al cliente un trato personalizado y un servicio post-venta garantizando todos nuestros productos.</p>
+                <p id="estilo"> Tenemos varios estilos de muebles por escoger, le mostraremos para que sea de su agrado.
+                </p>    
             </div>
         </div>
     </main>
 
-    <footer class="site-footer">
+    <!-- Footer-->
+    <footer class="wow animate__animated animate__bounce site-footer">
         <div class="grid-footer contenedor">
             <div>
                 <h3>Categorías</h3>
 
                 <nav class="footer-menu">
-                    <a href="#">Oficina</a>
-                    <a href="#">Cocina</a>
-                    <a href="#">Jardín</a>
-                    <a href="#">Casa</a>
-                    <a href="#">Dormitorios</a>
+                    <a href="../pages/galeria.html#oficina">Oficina</a>
+                    <a href="../pages/galeria.html#cocina">Cocina</a>
+                    <a href="../pages/galeria.html#jardin">Jardín</a>
+                    <a href="../pages/galeria.html#casa">Casa</a>
+                    <a href="../pages/galeria.html#dormitorio">Dormitorios</a>
                 </nav>
             </div>
-
             <div>
                 <h3>Sobre Nosotros</h3>
                 <nav class="footer-menu">
-                    <a href="#">Historia</a>
-                    <a href="#">Misión y Valores</a>
-                    <a href="#">Muebles</a>
-                    <a href="#">Localización</a>
-                    <a href="#">Términos del Servicio</a>
+                    <a href="../pages/historia.html">Historia</a>
+                    <a href="../pages/premios.html">Premios</a>
+                    <a href="../pages/nosotros.html#estilo">Estilo</a>
+                   
                 </nav>
             </div>
-
             <div>
                 <h3>Soporte</h3>
                 <nav class="footer-menu">
@@ -108,9 +105,7 @@
                             class="fa-brands fa-facebook fa-3x"></i></a>
                 </nav>
             </div>
-
         </div>
-
         <p class="copyright">Todos los derechos Reservados</p>
     </footer>
 

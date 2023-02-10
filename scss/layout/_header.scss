@@ -1,0 +1,34 @@
+
+@media (min-width: 768px) {
+
+   
+    /** Header y Navegacion **/
+    
+	header {
+		flex-direction: column;
+		height: 10 rem;
+	}
+	.logo {
+		flex-direction: row;
+		gap: 4rem;
+		border-bottom: .1rem solid #e1e1e1;
+		height: 10rem;
+	}
+	.logo-imagen {
+		width: 15rem;
+	}
+	.nombre-sitio {
+		margin-top: 5rem;
+		text-align: center;
+	}
+	.nav-principal {
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	.banner {
+		height: 55rem;
+	}
+	.carousel-inner {
+		max-height: 55rem;
+	}
+}

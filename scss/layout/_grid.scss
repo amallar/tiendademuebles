@@ -1,0 +1,162 @@
+/** Bloque Nosotros */
+
+.sobre-nosotros-grid {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+}
+.texto-nosotros {
+	grid-row: 2 / 3;
+	color: $color_2;
+	padding: 5rem;
+}
+
+/** Nosotros **/
+
+
+.contenido-nosotros {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	column-gap: 4rem;
+}
+
+
+.informacion-nosotros {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5rem;
+}
+.entrada {
+	border-bottom: 2px solid #e1e1e1;
+	margin-bottom: 2rem;
+	padding-bottom: 4rem;
+	h2 {
+		text-align: center;
+	}
+	&:last-of-type {
+		border: none;
+	}
+}
+
+/** Galeria **/
+
+.galeria {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	img {
+		height: 40rem;
+		width: 40rem;
+		object-fit: cover;
+	}
+}
+
+
+
+@media (min-width: 768px) {
+     
+    /** Categorias **/
+
+	.categoria {
+		margin-bottom: 0;
+		img {
+			&:hover {
+				transform: scale(2,2);
+			}
+		}
+	}
+	.listado-categorias {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2rem;
+	}
+
+    
+
+    /** Listado de Productos **/
+
+	.listado-productos {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 2rem;
+	}
+	.producto {
+		&:nth-child(1) {
+			grid-column-start: 1;
+			grid-column-end: 7;
+			display: grid;
+			grid-template-columns: 3fr 1fr;
+			img {
+				height: 43rem;
+				width: 100%;
+				object-fit: cover;
+				transition: height 3s, width 3s;
+				&:hover {
+					height: 500px;
+					width: 500px;
+				}
+			}
+		}
+		&:nth-child(2) {
+			grid-column-start: 1;
+			grid-column-end: 4;
+			img {
+				height: 30rem;
+				width: 100%;
+				object-fit: cover;
+				transition: height 3s, width 3s;
+				&:hover {
+					height: 400px;
+					width: 400px;
+				}
+			}
+		}
+		&:nth-child(3) {
+			img {
+				height: 30rem;
+				width: 100%;
+				object-fit: cover;
+				transition: height 3s, width 3s;
+				&:hover {
+					height: 800px;
+					width: 800px;
+				}
+			}
+			grid-column-start: 4;
+			grid-column-end: 7;
+		}
+		&:nth-child(4) {
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+		&:nth-child(5) {
+			grid-column-start: 3;
+			grid-column-end: 5;
+		}
+		&:nth-child(6) {
+			grid-column-start: 5;
+			grid-column-end: 7;
+		}
+		margin-bottom: 0;
+	}
+
+
+    .galeria {
+		grid-template-columns: repeat(3, 1fr);
+		img{
+			
+
+			&:hover{
+				-webkit-transform: scale(1.3);
+				transform: scale(1.3);
+			}
+
+		}
+		
+	}
+
+}

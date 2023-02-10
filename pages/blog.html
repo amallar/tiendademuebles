@@ -9,7 +9,7 @@
     <!-- Icono del sitio web-->
     <link rel="shorcout icon" href="../assets/img/favicon.ico" type="image/x-icon">
     <!-- Hoja de estilos sitio web-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,19 +30,17 @@
 
 <body>
     <header>
-        <img class="logo" src="../assets/img/logo.png" alt="Imagen Logo" />
-        <h1 class="nombre-sitio">Tienda <span> de Muebles </span></h1>
-    </header>
-
-    <div class="contenedor-navegacion">
+        <div class="logo">
+            <a href="../index.html"> <img class="logo-imagen" src="../assets/img/logo.png" alt="Imagen Logo" /> </a>
+            <a href="../index.html">
+                <h1 class="animate__animated animate__bounce nombre-sitio">Tienda <span> de Muebles </span></h1>
+            </a>
+        </div>
         <nav class="nav-principal contenedor">
-            <a href="../index.html">Inicio</a>
             <li><a href="../pages/nosotros.html">Nosotros</a>
                 <ul>
-                    <li> <a href="../pages/nosotros.html">Submenu1 </a> </li>
-                    <li> <a href="../pages/nosotros.html">Submenu2</a> </li>
-                    <li> <a href="../pages/nosotros.html">Submenu3</a> </li>
-                    <li> <a href="../pages/nosotros.html">Submenu4</a> </li>
+                    <li> <a href="../pages/historia.html">Historia </a> </li>
+                    <li> <a href="../pages/premios.html">Premios</a> </li>
                 </ul>
             </li>
             <a href="../pages/tienda.html">Tienda</a>
@@ -50,11 +48,12 @@
             <a href="../pages/galeria.html">Galería</a>
             <a href="../pages/contacto.html">Contacto</a>
         </nav>
-    </div>
-    
+    </header>
+
+    <!-- Contenido del blog-->
     <main class="contenido-principal contenedor ">
         <h2 class="text-center">Blog</h2>
-        
+
         <section class="contenedor-blog">
             <div class="blog">
                 <article class="entrada">
@@ -71,15 +70,15 @@
                         </div>
 
                         <div class="entrada-blog">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti cumque facilis accusantium non neque eos modi repudiandae expedita odio, placeat quae perspiciatis cum aut voluptatibus inventore, repellat aspernatur veniam.</p>
+                            <p>Mi opinión sobre tienda muebles es que es un sitio que te garantiza la compra de muebles y su posibilidad de devolución.</p>
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut quos nobis modi ratione perspiciatis necessitatibus praesentium quasi adipisci, est, corrupti fugiat pariatur incidunt quisquam, facilis rerum qui dolorem tempore.</p>
+                            <p>Tuve una magnifica experiencia con ellos, fueron rápidos, atentos y buen servicio posventa.</p>
                         </div>
                         <a href="#" class="btn max-width-30">Leer</a>
-                    
+
                     </div>
 
-                  
+
                 </article>
 
                 <article class="entrada">
@@ -96,14 +95,14 @@
                         </div>
 
                         <div class="entrada-blog">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, perferendis numquam? Quo totam maxime praesentium soluta quis voluptatibus recusandae, reiciendis deleniti corrupti eius dolor ducimus, itaque sequi? Ea, quo quia.</p>
+                            <p>Puede encontrar el mueble que no encontraba en ningún sitio y me dieron una atención excelente, gracias a esta tienda pude realizar un buen regalo a mi padre</p>
 
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus mollitia, animi sapiente amet reprehenderit iusto a rem expedita quae suscipit voluptatum recusandae minus doloremque voluptas, optio atque nisi fugit quo.</p>
+                            <p>Felicito a esta tienda por todos sus servicios y su atención tan buena.</p>
                         </div>
 
                         <a href="#" class="btn max-width-30">Leer</a>
                     </div>
-                    
+
                 </article>
             </div>
 
@@ -127,31 +126,29 @@
         </section>
     </main>
 
-    <footer class="site-footer">
+    <!--Footer-->
+    <footer class="wow animate__animated animate__bounce site-footer">
         <div class="grid-footer contenedor">
             <div>
                 <h3>Categorías</h3>
 
                 <nav class="footer-menu">
-                    <a href="#">Oficina</a>
-                    <a href="#">Cocina</a>
-                    <a href="#">Jardín</a>
-                    <a href="#">Casa</a>
-                    <a href="#">Dormitorios</a>
+                    <a href="../pages/galeria.html#oficina">Oficina</a>
+                    <a href="../pages/galeria.html#cocina">Cocina</a>
+                    <a href="../pages/galeria.html#jardin">Jardín</a>
+                    <a href="../pages/galeria.html#casa">Casa</a>
+                    <a href="../pages/galeria.html#dormitorio">Dormitorios</a>
                 </nav>
             </div>
-
             <div>
                 <h3>Sobre Nosotros</h3>
                 <nav class="footer-menu">
-                    <a href="#">Historia</a>
-                    <a href="#">Misión y Valores</a>
-                    <a href="#">Muebles</a>
-                    <a href="#">Localización</a>
-                    <a href="#">Términos del Servicio</a>
+                    <a href="../pages/historia.html">Historia</a>
+                    <a href="../pages/premios.html">Premios</a>
+                    <a href="../pages/nosotros.html#estilo">Estilo</a>
+                   
                 </nav>
             </div>
-
             <div>
                 <h3>Soporte</h3>
                 <nav class="footer-menu">
@@ -163,12 +160,9 @@
                             class="fa-brands fa-facebook fa-3x"></i></a>
                 </nav>
             </div>
-
         </div>
-
         <p class="copyright">Todos los derechos Reservados</p>
     </footer>
-
 </body>
 
 </html>

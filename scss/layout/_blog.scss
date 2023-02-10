@@ -1,0 +1,32 @@
+/** Blog */
+
+.contenido-blog {
+	padding: 2rem;
+}
+.entrada-meta {
+	p {
+		font-weight: bold;
+	}
+	span {
+		color: map-get($estilos, color-categoria);
+	}
+}
+.contenido-entrada-blog {
+	width: 60rem;
+	margin: 0 auto;
+}
+
+
+
+@media (min-width: 768px) {
+
+
+	.informacion-nosotros {
+		padding: 0;
+	}
+	.contenedor-blog {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		column-gap: 4rem;
+	}
+}

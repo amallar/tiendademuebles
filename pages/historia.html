@@ -35,7 +35,6 @@
             <a href="../index.html">
                 <h1 class="animate__animated animate__bounce nombre-sitio">Tienda <span> de Muebles </span></h1>
             </a>
-
         </div>
         <nav class="nav-principal contenedor">
             <li><a href="../pages/nosotros.html">Nosotros</a>
@@ -51,93 +50,23 @@
         </nav>
     </header>
 
+    <!-- Contenido de historia-->
     <main class="contenido-principal contenedor ">
-        <h2 class="text-center">Contacto</h2>
-    
-    <!-- Formulario de contacto-->
-        <form class="formulario">
-            <fieldset>
-                <legend>Tus Datos</legend>
+        <h2 class="text-center">Historia</h2>
 
-                <div class="campo">
-                    <label for="nombre">Nombre: </label>
-                    <input id="nombre" type="text" placeholder="Tu Nombre" required>
-                </div>
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <img src="../assets/img/nosotros.jpg" alt="Imagen nosotros">
+            </div>
+            <div class="informacion-nosotros">
+                <p>Me llamo Enrique Arrillaga y soy el fundador de tiendas de muebles. Nuestra historia empezó en 2014, cuando en plena crisis, volvimos a nacer después de que todo se pusiera muy cuesta arriba.
+                    Fue posible gracias a la ayuda de mi familia y amigos. Y seguramente, gracias también a algo de orgullo y cabezonería. Fuese por el motivo que fuese, quise continuar con la tradición familiar de vender muebles de calidad.</p>
 
-                <div class="campo">
-                    <label for="asunto">Asunto:</label>
-                    <input id="asunto" type="text" placeholder="Tu Asunto" required>
-                </div>
-
-                <div class="campo">
-                    <label for="email">E-mail:</label>
-                    <input id="email" type="email" placeholder="Tu Email">
-                </div>
-
-                <div class="campo">
-                    <label for="tel">Teléfono:</label>
-                    <input id="tel" type="tel" placeholder="Tu Teléfono">
-                </div>
-
-                <div class="campo">
-                    <label for="tel">Mensaje:</label>
-                    <textarea rows="10" cols="20"></textarea>
-                </div>
-
-            </fieldset>
-
-            <fieldset>
-                <legend>País</legend>
-
-                <div class="campo">
-                    <label for="pais">País</label>
-                    <select id="pais">
-                        <option value="">-- Seleccione -- </option>
-                        <option value="MX">México</option>
-                        <option value="PR">Perú</option>
-                        <option value="CO">Colombia</option>
-                        <option value="AR">Argentina</option>
-                        <option value="ES">España</option>
-                        <option value="CL">Chile</option>
-                    </select>
-
-                </div>
-
-            </fieldset>
-
-            <fieldset>
-                <legend>Información Extra</legend>
-
-                <div class="campo">
-                    <label for="cliente">Cliente</label>
-                    <input id="cliente" type="radio" name="tipo" value="cliente">
-                </div>
-
-                <div class="campo">
-                    <label for="proveedor">Proveedor</label>
-                    <input id="proveedor" type="radio" name="tipo" value="proveedor">
-                </div>
-
-                <div class="campo">
-                    <label for="categoria">Categoría de Interés</label>
-                    <input list="categorias" name="categorias">
-                    <datalist id="categorias">
-                        <option value="Cocina">
-                        <option value="Exterior">
-                        <option value="Recamaras">
-                        <option value="Oficina">
-                        <option value="Televisión">
-                    </datalist>
-                </div>
-
-            </fieldset>
-
-            <input class="btn" type="submit" value="Enviar Formulario">
-        </form>
-
+                <p>Seguir poniendo en práctica todo lo que había aprendido con mi padre. Pero estaba claro que los nuevos tiempos nos obligaban a hacerlo de forma diferente</p>
+            </div>
+        </div>
     </main>
 
-    <!-- Footer-->
     <footer class="wow animate__animated animate__bounce site-footer">
         <div class="grid-footer contenedor">
             <div>
@@ -174,6 +103,7 @@
         </div>
         <p class="copyright">Todos los derechos Reservados</p>
     </footer>
+
 </body>
 
 </html>

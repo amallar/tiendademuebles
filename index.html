@@ -12,7 +12,7 @@
     <!-- Icono del sitio web-->
     <link rel="shorcout icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <!-- Hoja de estilos sitio web-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
     <!-- CDN Animate CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--Google fonts-->
@@ -33,158 +33,167 @@
 
 <body>
     <header>
-        <img class="logo" src="./assets/img/logo.png" alt="Imagen Logo" />
-        <h1 class="animate__animated animate__bounce nombre-sitio">Tienda <span> de Muebles </span></h1>
-    </header>
-    <div class="contenedor-navegacion">
+        <div class="logo">
+
+            <a href="index.html"> <img class="logo-imagen" src="./assets/img/logo.png" alt="Imagen Logo" /> </a>
+            <a href="index.html">
+                <h1 class="animate__animated animate__bounce nombre-sitio">Tienda <span> de Muebles </span></h1>
+            </a>
+
+        </div>
         <nav class="nav-principal contenedor">
-            <a href="index.html">Inicio</a>
+
             <li><a href="./pages/nosotros.html">Nosotros</a>
                 <ul>
-                    <li> <a href="./pages/nosotros.html">Submenu1 </a> </li>
-                    <li> <a href="./pages/nosotros.html">Submenu2</a> </li>
-                    <li> <a href="./pages/nosotros.html">Submenu3</a> </li>
-                    <li> <a href="./pages/nosotros.html">Submenu4</a> </li>
+                    <li> <a href="./pages/historia.html">Historia </a> </li>
+                    <li> <a href="./pages/premios.html">Premios</a> </li>
                 </ul>
             </li>
-            <a href="./pages/tienda.html">Tienda</a>
-            <a href="./pages/blog.html">Blog</a>
-            <a href="./pages/galeria.html">Galería</a>
-            <a href="./pages/contacto.html">Contacto</a>
+            <a class="boton-menu" href="./pages/tienda.html">Tienda</a>
+            <a class="boton-menu" href="./pages/blog.html">Blog</a>
+            <a class="boton-menu" href="./pages/galeria.html">Galería</a>
+            <a class="boton-menu" href="./pages/contacto.html">Contacto</a>
         </nav>
-    </div>
 
-    <section>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/img/galeria_01.jpg" class="banner" alt="imagen1">
+    </header>
+
+    <main>
+        <section>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/galeria_01.jpg" class="banner" alt="foto galeria oficina">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/galeria_02.jpg" class="banner" alt="foto galeria hogar">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/galeria_03.jpg" class="banner" alt="foto galeria cocina">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./assets/img/galeria_02.jpg" class="banner" alt="imagen2">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="wow animate__animated animate__bounce contenedor categorias">
+            <h2 class="text-center">Categorías de Productos</h2>
+
+            <div class="listado-categorias">
+                <div class=" categoria">
+                    <img src="./assets/img/categoria1.jpg" alt="foto categoria oficina" />
+                    <a href="#">Oficina</a>
                 </div>
-                <div class="carousel-item">
-                    <img src="./assets/img/galeria_03.jpg" class="banner" alt="imagen3">
+
+                <div class="categoria">
+                    <img src="./assets/img/categoria2.jpg" alt="foto categoria hogar" />
+                    <a href="#">Hogar</a>
+                </div>
+
+                <div class="categoria">
+                    <img src="./assets/img/categoria3.jpg" alt="foto categoria cocina" />
+                    <a href="#">Cocina</a>
+                </div>
+
+                <div class="categoria">
+                    <img src="./assets/img/categoria4.jpg" alt="foto categoria jardin" />
+                    <a href="#">Jardin</a>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
+        </section>
 
-    <section class="wow animate__animated animate__bounce contenedor categorias">
-        <h2 class="text-center">Categorías de Productos</h2>
-
-        <div class="listado-categorias">
-            <div class=" categoria">
-                <img src="./assets/img/categoria1.jpg" alt="Imagen Categoría 1" />
-                <a href="#">Oficina</a>
+        <section class="wow animate__animated animate__bounce sobre-nosotros">
+            <div class="contenedor sobre-nosotros-grid">
+                <div class="texto-nosotros">
+                    <h2>Sobre Nosotros</h2>
+                    <p>Tienda de Muebles es una empresa dedicada al mueble y la decoración de su hogar, con los últimos estilos más actuales y modernos y conservando el estilo colonial y la madera natural para gustos más refinados.
+                       Somos un equipo de profesionales integrado por personas dedicadas al sector del mueble y ofrecer unos productos de primeras calidades y que mejor se adapten a sus gustos y necesidades</p>
+                </div>
             </div>
+        </section>
 
-            <div class="categoria">
-                <img src="./assets/img/categoria2.jpg" alt="Imagen Categoría 2" />
-                <a href="#">Hogar</a>
-            </div>
+        <section class="contenido-principal contenedor ">
+            <h2 class="text-center">Nuestros Productos</h2>
+            <div class="listado-productos">
+                <div class="producto">
+                    <img src="./assets/img/producto1.jpg" alt="Imagen Producto 1">
+                    <div class="texto-producto">
+                        <h3>Mesa oficina</h3>
+                        <p>Mesa de oficina ideal para pequeñas empresas y comercios que deseen tener espacio para sus proyectos
+                            posibilidad
+                            de varios colores y tipos de acabado, pruébala sin compromiso y de regalo tienes una silla.</p>
+                        <p class="precio">300€</p>
+                        <a class="boton-carrito" href="#">Agregar al Carrito</a>
+                    </div> <!-- Info Producto -->
+                </div> <!-- Producto -->
+                <div class="producto">
+                    <img src="./assets/img/producto2.jpg" alt="Imagen Producto 2">
 
-            <div class="categoria">
-                <img src="./assets/img/categoria3.jpg" alt="Imagen Categoría 3" />
-                <a href="#">Cocina</a>
-            </div>
+                    <div class="texto-producto">
+                        <h3>Mesa cocina</h3>
+                        <p>Mesa de cocina ideal para familias y cenas, perfecta para comidas familiares
+                           con todos los acabados y tipos de material  para poder escoger del catalogo</p>
+                        <p class="precio">400€</p>
+                        <a class="boton-carrito" href="#">Agregar al Carrito</a>
+                    </div> <!-- Info Producto -->
+                </div> <!-- Producto -->
 
-            <div class="categoria">
-                <img src="./assets/img/categoria4.jpg" alt="Imagen Categoría 4" />
-                <a href="#">Jardin</a>
-            </div>
-        </div>
-    </section>
+                <div class="producto">
+                    <img src="./assets/img/producto3.jpg" alt="Imagen Producto 3">
+                    <div class="texto-producto">
+                        <h3>Muebles cocina</h3>
+                        <p>Os presentamos esta cocina con todo tipo de muebles y accesorios para que puedas cocinar mejor
+                            con cajones y hornos incluidos ven a verla y veras como te gustará</p>
+                        <p class="precio">600€</p>
+                        <a class="boton-carrito" href="#">Agregar al Carrito</a>
+                    </div> <!-- Info Producto -->
+                </div> <!-- Producto -->
 
-    <section class="wow animate__animated animate__bounce sobre-nosotros">
-        <div class="contenedor sobre-nosotros-grid">
-            <div class="texto-nosotros">
-                <h2>Sobre Nosotros</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum reiciendis ipsam aut dolorem
-                    recusandae sequi! Odio pariatur sint quidem porro!</p>
-            </div>
-        </div>
-    </section>
+                <div class="producto">
+                    <img src="./assets/img/producto4.jpg" alt="Imagen Producto 4">
+                    <div class="texto-producto">
+                        <h3>Mueble jardin</h3>
+                        <p>Disponemos de este mueble de jardin donde hará que tus veldas sean mejores esta formado
+                            por mimbre
+                            y tiene un estilo rústico que le gustará a tu jardin</p>
+                        <p class="precio">800€</p>
+                        <a class="boton-carrito" href="#">Agregar al Carrito</a>
+                    </div> <!-- Info Producto -->
+                </div> <!-- Producto -->
 
-    <main class="contenido-principal contenedor ">
-        <h2 class="text-center">Nuestros Productos</h2>
-        <div class="listado-productos">
-            <div class="producto">
-                <img src="./assets/img/producto1.jpg" alt="Imagen Producto 1">
-                <div class="texto-producto">
-                    <h3>Producto 1</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem eius delectus sit beatae autem
-                        eos fugit placeat laboriosam expedita sunt.</p>
-                    <p class="precio">300€</p>
-                    <a class="btn" href="#">Agregar al Carrito</a>
-                </div> <!-- Info Producto -->
-            </div> <!-- Producto -->
-            <div class="producto">
-                <img src="./assets/img/producto2.jpg" alt="Imagen Producto 2">
+                <div class="producto">
+                    <img src="./assets/img/producto5.jpg" alt="Imagen Producto 5">
+                    <div class="texto-producto">
+                        <h3>Mesa comida</h3>
+                        <p>Tenemos esta mesa comida para que puedas comer con tu familia de la mejor forma posible
+                            con estilo rústico
+                            ofrecemos gran variedad de colores disponibles.</p>
+                        <p class="precio">200€</p>
+                        <a class="boton-carrito" href="#">Agregar al Carrito</a>
+                    </div> <!-- Info Producto -->
+                </div> <!-- Producto -->
 
-                <div class="texto-producto">
-                    <h3>Producto 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita molestias sint nobis
-                        exercitationem nesciunt eaque reiciendis laborum quo ipsum ratione?</p>
-                    <p class="precio">400€</p>
-                    <a class="btn" href="#">Agregar al Carrito</a>
-                </div> <!-- Info Producto -->
-            </div> <!-- Producto -->
+                <div class="producto">
+                    <img src="./assets/img/producto6.jpg" alt="Imagen Producto 6">
+                    <div class="texto-producto">
+                        <h3>Mesa oficina</h3>
+                        <p>Tenemos esta mesa oficina para que puedas realizar mejor tus reuniones con tus empleados elegante y moderna
+                            tenemos disponible gran variedad de colores y formas.</p>
+                        <p class="precio">100€</p>
+                        <a class="boton-carrito" href="#">Agregar al Carrito</a>
+                    </div> <!-- Info Producto -->
+                </div> <!-- Producto -->
+            </div> <!-- Fin de Listado de Productos -->
+        </section>
 
-            <div class="producto">
-                <img src="./assets/img/producto3.jpg" alt="Imagen Producto 3">
-                <div class="texto-producto">
-                    <h3>Producto 3</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem corrupti, vel
-                        molestias quasi et deserunt libero dignissimos quos totam!</p>
-                    <p class="precio">600€</p>
-                    <a class="btn" href="#">Agregar al Carrito</a>
-                </div> <!-- Info Producto -->
-            </div> <!-- Producto -->
-
-            <div class="producto">
-                <img src="./assets/img/producto4.jpg" alt="Imagen Producto 4">
-                <div class="texto-producto">
-                    <h3>Producto 4</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque debitis optio adipisci.
-                        Quibusdam dolores alias impedit? Consequuntur, non maiores?</p>
-                    <p class="precio">800€</p>
-                    <a class="btn" href="#">Agregar al Carrito</a>
-                </div> <!-- Info Producto -->
-            </div> <!-- Producto -->
-
-            <div class="producto">
-                <img src="./assets/img/producto5.jpg" alt="Imagen Producto 5">
-                <div class="texto-producto">
-                    <h3>Producto 5</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A animi cumque repellendus laudantium
-                        officiis aperiam natus accusantium corrupti alias ea.</p>
-                    <p class="precio">200€</p>
-                    <a class="btn" href="#">Agregar al Carrito</a>
-                </div> <!-- Info Producto -->
-            </div> <!-- Producto -->
-
-            <div class="producto">
-                <img src="./assets/img/producto6.jpg" alt="Imagen Producto 6">
-                <div class="texto-producto">
-                    <h3>Producto 6</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat veniam assumenda tempore in
-                        eaque necessitatibus nam illo fuga asperiores ratione.</p>
-                    <p class="precio">900€</p>
-                    <a class="btn" href="#">Agregar al Carrito</a>
-                </div> <!-- Info Producto -->
-            </div> <!-- Producto -->
-        </div> <!-- Fin de Listado de Productos -->
     </main>
 
     <footer class="wow animate__animated animate__bounce site-footer">
@@ -193,21 +202,20 @@
                 <h3>Categorías</h3>
 
                 <nav class="footer-menu">
-                    <a href="#">Oficina</a>
-                    <a href="#">Cocina</a>
-                    <a href="#">Jardín</a>
-                    <a href="#">Casa</a>
-                    <a href="#">Dormitorios</a>
+                    <a href="./pages/galeria.html#oficina">Oficina</a>
+                    <a href="./pages/galeria.html#cocina">Cocina</a>
+                    <a href="./pages/galeria.html#jardin">Jardín</a>
+                    <a href="./pages/galeria.html#casa">Casa</a>
+                    <a href="./pages/galeria.html#dormitorio">Dormitorios</a>
                 </nav>
             </div>
             <div>
                 <h3>Sobre Nosotros</h3>
                 <nav class="footer-menu">
-                    <a href="#">Historia</a>
-                    <a href="#">Misión y Valores</a>
-                    <a href="#">Muebles</a>
-                    <a href="#">Localización</a>
-                    <a href="#">Términos del Servicio</a>
+                    <a href="./pages/historia.html">Historia</a>
+                    <a href="./pages/premios.html">Premios</a>
+                    <a href="./pages/nosotros.html#estilo">Estilo</a>
+                   
                 </nav>
             </div>
             <div>
